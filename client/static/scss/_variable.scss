@@ -1,0 +1,58 @@
+$color-yellow: #eee53d;
+$color-yellowlight: #fefdeb;
+$color-orange: #F68B1F;
+$color-orange-light: #F8A34E;
+$color-orange-dark: #D67A1D;
+$color-orange-darker: #954d22;
+$color-red-danger: #CE0000;
+$color-red: hsl(3, 83%, 53%);
+$color-red-light: #E53232;
+$color-red-dark: #AA0101;
+$color-green: #3eb54a;
+$color-blue: hsl(205, 100%, 35%);
+$color-blue-dark: #283e4a;
+$color-blue-light: #0068b3;
+$color-blue-lighter: #d1ecff;
+$color-white: #FFFFFF;
+$color-gray: #c7d1d8;
+$color-gray-light: #F5F5F5;
+$color-gray-lighter: #F7F8F8;
+$color-gray-x-light: #ecebeb;
+$color-gray-2x-light: #f3f3f3;
+$color-gray-dark: #717171;
+$color-gray-darker: #494949;
+$color-gray-darkest: #333;
+$black: rgba(0, 0, 0, .85) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: #494949 !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+$orange: #F68B1F !default;
+$orange-light: #fdf6eb !default;
+$yellow: #eee53d !default;
+$green: #3eb54a !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$blue: hsl(217, 71%, 53%) !default;
+$purple: hsl(230, 35%, 45%) !default;
+$purple-dark: hsl(207, 33%, 27%) !default;
+$purple-light: hsl(229, 35%, 49%) !default;
+$red: hsl(3, 83%, 53%) !default;
+$red-danger: #CE0000!default;
+$red-light: #E53232!default;
+$red-dark: #AA0101!default;
+$family-museo: 'Museo Sans',
+serif;
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $blue;
+$primary-invert: $white;
+// Use the existing orange as the danger color
+$danger: $red-danger;
+$dark: $grey-dark !default;
+$family-primary: $family-museo;

@@ -1,2 +1,27 @@
-# vuejs-workshop
-A sample Vuejs code structure ( used in VueJS workshop)
+# mabnasys.com
+
+To start:
+
+```bash
+$ npm install
+```
+
+To develop:
+
+```bash
+$ npm run dev
+```
+
+To build for production:
+
+```bash
+$ npm run build
+```
+
+To lint you code:
+
+```bash
+$ npm run lint
+```
+
+

@@ -1,0 +1,67 @@
+// .checkbox {
+//     .checked {
+//         background: url("/images/checkboxes.png") no-repeat 0 -40px;
+//         height: 20px;
+//         line-height: 19px;
+//         @include retina {
+//             background-size: 22px 60px;
+//             height: 20px;
+//             background-image: url("/images/checkboxes_x2.png");
+//         }
+//     }
+//     .checked-orange {
+//         background: url("/images/checkboxes.png") no-repeat 0 -20px;
+//         height: 20px;
+//         line-height: 19px;
+//         @include retina {
+//             background-size: 22px 60px;
+//             height: 20px;
+//             background-image: url("/images/checkboxes_x2.png");
+//         }
+//     }
+//     .unchecked {
+//         background: url("/images/checkboxes.png") no-repeat 0 0px;
+//         height: 20px;
+//         line-height: 19px;
+//         margin-right: 0px;
+//         @include retina {
+//             background-size: 22px 60px;
+//             height: 20px;
+//             background-image: url("/images/checkboxes_x2.png");
+//         }
+//     }
+// }
+.radio {
+    cursor: pointer;
+    .selected {
+        padding-left: 30px;
+        background: url(/images/radio-btn.png) no-repeat 1px -42px;
+        height: 21px;
+        line-height: 20px;
+        @include retina {
+            background-size: 22px 63px;
+            background-image: url("/images/radio-btn_x2.png");
+        }
+    }
+    .selected-orange {
+        padding-left: 30px;
+        background: url("/images/radio-btn.png") no-repeat 0 -20px;
+        height: 21px;
+        line-height: 20px;
+        @include retina {
+            background-size: 22px 63px;
+            background-image: url(/images/radio-btn_x2.png);
+        }
+    }
+    .unselected,
+    .unSelected {
+        padding-left: 30px;
+        background: url("/images/radio-btn.png") no-repeat 1px 0px;
+        height: 21px;
+        line-height: 20px;
+        @include retina {
+            background-size: 22px 63px;
+            background-image: url("/images/radio-btn_x2.png");
+        }
+    }
+}

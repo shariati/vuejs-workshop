@@ -1,0 +1,19 @@
+.page-with-top-menu {
+    position: relative;
+    margin-top: 50px;
+    @include phablet-down {
+        margin-top: 122px;
+        .container {
+            height: 100vh;
+        }
+    }
+}
+
+#app {
+    min-width: 327px;
+    height: 100vh;
+}
+
+.thumbnail {
+    border: none;
+}
