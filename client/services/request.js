@@ -7,34 +7,34 @@ export default {
     post(nodeAddress, data, hideLoader) {
         return new Promise((resolve, reject) => {
             let api = service.base + nodeAddress
-            var header = 'Bearer ' + store.state.user.token
-            if (!hideLoader) { store.commit("loading", true) }
+            var header = 'Bearer '
+                //if (!hideLoader) { store.commit("loading", true) }
             Vue.http.post(api, data, {
                 headers: { "Content-Type": "application/json", "Authorization": header }
             }).then(res => {
-                store.commit("loading", false)
+                //store.commit("loading", false)
                 resolve(res)
             }, err => {
-                store.commit("loading", false)
+                //store.commit("loading", false)
                 reject(err)
             })
         })
     },
-    get(nodeAddress, data, hideLoader) {
+    get(nodeAddress, data) {
         return new Promise((resolve, reject) => {
-            let api = service.base + nodeAddress
-            var header = 'Bearer ' + store.state.user.token
-            if (!hideLoader) { store.commit("loading", true) }
+            let api = nodeAddress
+            var header = 'Bearer '
+                //if (!hideLoader) { store.commit("loading", true) }
             Vue.http.get(api, {
                 headers: {
                     Authorization: header
                 }
             }).then(res => {
                 resolve(res)
-                store.commit("loading", false)
+                    //store.commit("loading", false)
             }, err => {
                 reject(err)
-                store.commit("loading", false)
+                    //store.commit("loading", false)
             })
         })
     }

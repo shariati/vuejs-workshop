@@ -1,13 +1,13 @@
-import Vue from "vue";
-import VueResource from "vue-resource";
 import service from '../services';
 import request from '../services/request.js';
-Vue.use(VueResource);
 
-const configs = {
 
-};
-const http = Vue.http;
 export default {
-
-};
+    getCityInformation({ commit, dispatch }, payload) {
+        request.get(service.getCity + payload).then((response) => {
+            commit('updateCity', response.body.current)
+        }, (err) => {
+            console.log(err)
+        })
+    }
+}

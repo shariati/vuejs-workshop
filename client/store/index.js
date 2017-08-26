@@ -7,7 +7,9 @@ import actions from './actions.js'
 Vue.use(Vuex)
 
 const state = {
-
+    theme: {
+        backgroundColor: "green"
+    }
 }
 
 const store = new Vuex.Store({
